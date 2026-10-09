@@ -1,0 +1,45 @@
+# Cybernetic AR HUD configuration. Anything you leave out falls back to the built-in default.
+camera:
+  index: 0
+  width: 1280
+  height: 720
+  mirror: true
+
+perception:
+  hands: true
+  max_hands: 2
+  face_mesh: true
+  max_faces: 2
+  pose: true
+  pose_complexity: 0          # 0 = fastest, 1 = more accurate
+  process_scale: 0.6          # lower = faster inference, slightly less accurate
+  object_detection: false     # pip install ultralytics
+  yolo_every: 3
+  face_recognition: false     # pip install face_recognition, then python enroll_face.py --name YOU
+  faces_dir: faces
+
+gestures:
+  use_model: true             # use models/gesture_model.pkl if you trained one
+  model_min_conf: 0.8
+  pinch_threshold: 0.35       # press C in the HUD to calibrate this automatically
+  swipe_distance: 0.28
+  swipe_time: 0.45
+
+ui:
+  theme: cyan                 # cyan | red | green | amber
+  fullscreen: false
+  scanlines: true
+  glow: true
+  vignette: true
+  glitch: true
+  boot_sequence: true
+  dim: 0.72
+  show_mesh: true
+
+voice:
+  enabled: false
+  language: en-US
+
+recording:
+  dir: captures
+  fps: 30

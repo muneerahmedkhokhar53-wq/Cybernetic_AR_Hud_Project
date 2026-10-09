@@ -1,0 +1,14 @@
+# Core
+opencv-python>=4.8
+numpy>=1.24,<2.0
+mediapipe==0.10.14
+PyYAML>=6.0
+
+# Custom gesture training (train_gesture.py)
+scikit-learn>=1.3
+
+# Optional features - install only what you need
+# ultralytics>=8.1            # --objects  (YOLO object detection)
+# face_recognition>=1.3       # --face-id  (needs dlib / CMake)
+# SpeechRecognition>=3.10     # --voice
+# PyAudio>=0.2.14             # --voice (microphone access)
