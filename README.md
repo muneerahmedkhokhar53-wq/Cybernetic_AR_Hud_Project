@@ -118,6 +118,10 @@ def register(registry):
 - Wrong camera: set `camera.index` (try 1 or 2) and a lower `width/height` if the stream is slow.
 - Face angles, gaze and expression are geometric estimates, good for a HUD effect, not for measurement.
 
+## Privacy and responsible use
+
+Camera frames and face-related data can be sensitive. Face identification is optional and should only be enabled with informed consent. The README describes local storage of enrolled encodings; inspect your configuration and recording settings before use, avoid committing captured media or encodings, and delete local data when it is no longer needed. Geometric gaze and expression outputs are approximate visual effects, not medical or psychological measurements.
+
 ## Notes
 
 Face identification is optional, local and opt-in. Please only enroll people who consent.
